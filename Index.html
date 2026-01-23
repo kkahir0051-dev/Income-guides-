@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Income Operating System | No-Face $10K/Month Blueprint</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            line-height: 1.6; color: #1f2937; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .cta-button { 
+            background: linear-gradient(135deg, #667eea, #764ba2); 
+            color: white; 
+            padding: 12px 32px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 10px 30px rgba(102,126,234,0.4); 
+            display: inline-block;
+            target="_blank"
+        }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(102,126,234,0.6); }
+
+        /* Hero */
+        .hero { padding: 120px 0 80px; text-align: center; color: white; }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; margin-bottom: 1.5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .hero-subtitle { font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .price-badge { display: inline-block; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 15px 30px; border-radius: 50px; font-size: 1.5rem; font-weight: 700; margin-bottom: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+
+        /* Sections */
+        section { padding: 80px 0; }
+        .dark-section { background: rgba(255,255,255,0.95); }
+        .light-section { background: rgba(248,250,252,0.7); backdrop-filter: blur(20px); }
+
+        /* Problem-Solution */
+        .problem-solution { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .problem-box, .solution-box { padding: 2rem; border-radius: 20px; }
+        .problem-box { background: rgba(255,99,99,0.1); border: 2px solid rgba(255,99,99,0.2); }
+        .solution-box { background: rgba(102,126,234,0.1); border: 2px solid rgba(102,126,234,0.2); }
+
+        /* Bundle Value */
+        .bundle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .bundle-item { background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.2); }
+        .bundle-item:hover { transform: translateY(-10px); box-shadow: 0 30px 80px rgba(0,0,0,0.15); }
+        .bundle-item h3 { color: #667eea; font-size: 1.3rem; margin-bottom: 1rem; }
+
+        /* Stats */
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; margin: 3rem 0; }
+        .stat { padding: 2rem; background: rgba(255,255,255,0.9); border-radius: 20px; }
+        .stat-number { font-size: 3rem; font-weight: 900; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        /* Testimonials */
+        .testimonials { text-align: center; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .testimonial { background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
+
+        /* Footer CTA */
+        .final-cta { text-align: center; padding: 4rem 0; background: rgba(0,0,0,0.8); color: white; }
+        .final-cta h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .problem-solution { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            .price-badge { font-size: 1.2rem; padding: 12px 24px; }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in-up { animation: fadeInUp 0.8s ease forwards; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">AI Income Ops</div>
+            <a href="https://mrbeastdigital.lemonsqueezy.com/checkout" class="cta-button" target="_blank" rel="noopener noreferrer">Get Instant Access - $599</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in-up">AI Income Operating System</h1>
+            <p class="hero-subtitle fade-in-up">No-Face Edition | Scale to $10K+/Month Selling AI Services<br>Without Technical Skills, Personal Brand, or Cold Calling</p>
+            <div class="price-badge fade-in-up">
+                <strong>ONLY $599</strong> One-Time<br>
+                <small>250+ Pages + 6 Bonuses + Private Community</small>
+            </div>
+            <a href="https://mrbeastdigital.lemonsqueezy.com/checkout" class="cta-button" style="font-size: 1.2rem; padding: 18px 48px;" target="_blank" rel="noopener noreferrer" id="buy">Buy Now - Instant Download</a>
+        </div>
+    </section>
+
+    <!-- Problem Solution -->
+    <section class="dark-section">
+        <div class="container">
+            <div class="problem-solution">
+                <div class="problem-box fade-in-up">
+                    <h2 style="color: #ef4444; font-size: 2rem; margin-bottom: 1rem;">The Problem</h2>
+                    <ul style="font-size: 1.1rem;">
+                        <li>• Learning AI tools instead of selling solutions</li>
+                        <li>• Targeting everyone (getting no one)</li>
+                        <li>• Underpricing ($50/hour chaos)</li>
+                        <li>• No systems = burnout at $2K/month</li>
+                    </ul>
+                </div>
+                <div class="solution-box fade-in-up">
+                    <h2 style="color: #667eea; font-size: 2rem; margin-bottom: 1rem;">The System</h2>
+                    <ul style="font-size: 1.1rem;">
+                        <li>• <strong>1 Niche. 1 Offer. 1 System.</strong></li>
+                        <li>• $1K-$5K/month retainers</li>
+                        <li>• LinkedIn outreach templates</li>
+                        <li>• 2-3 hours/client/week delivery</li>
+                        <li>• Scale to $10K+ agency</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bundle Value -->
+    <section class="light-section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #1f2937;">Complete A-Z Bundle (250+ Pages)</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.9;">Everything you need to go from $0 to first $1K client in 30 days</p>
+            
+            <div class="bundle-grid">
+                <div class="bundle-item fade-in-up">
+                    <h3>🎯 Core Playbook</h3>
+                    <p><strong>150+ Pages:</strong> Foundation → Client Acquisition → Delivery → Scale. 24 step-by-step chapters with 30-day action plan.</p>
+                </div>
+                <div class="bundle-item fade-in-up">
+                    <h3>📧 Outreach Scripts</h3>
+                    <p>LinkedIn + Cold Email templates. 3-part message formula + 3-step follow-ups that convert silent prospects.</p>
+                </div>
+                <div class="bundle-item fade-in-up">
+                    <h3>💰 Pricing Calculator</h3>
+                    <p>Starter ($1,200), Growth ($2,800), Authority ($4,500) packages + price defense scripts for every objection.</p>
+                </div>
+                <div class="bundle-item fade-in-up">
+                    <h3>🤖 50+ AI Prompts</h3>
+                    <p>Content creation, client research, optimization prompts. Systemized quality in any brand voice.</p>
+                </div>
+                <div class="bundle-item fade-in-up">
+                    <h3>📋 Client Templates</h3>
+                    <p>Onboarding, weekly delivery, boundary management. Professional experience from day 1.</p>
+                </div>
+                <div class="bundle-item fade-in-up">
+                    <h3>⚖️ Legal Protection</h3>
+                    <p>Service agreements, SOW templates, red flag checklist. Protected from scope creep & non-payment.</p>
+                </div>
+                <div class="bundle-item fade-in-up">
+                    <h3>📈 Scaling Playbook</h3>
+                    <p>Solo → Manager → Agency roadmap. Hire/automate matrix + financial models.</p>
+                </div>
+                <div class="bundle-item fade-in-up" style="border: 3px solid #10b981; background: linear-gradient(135deg, #10b981, #059669); color: white;">
+                    <h3 style="color: white;">👥 Private Telegram</h3>
+                    <p>Weekly Q&A + peer networking + priority support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Stats -->
+    <section class="dark-section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Proven Results</h2>
+            <div class="stats">
+                <div class="stat fade-in-up">
+                    <div class="stat-number">30</div>
+                    <p>Days to First Client</p>
+                </div>
+                <div class="stat fade-in-up">
+                    <div class="stat-number">$1K-$5K</div>
+                    <p>Monthly Retainers</p>
+                </div>
+                <div class="stat fade-in-up">
+                    <div class="stat-number">2-3 Hours</div>
+                    <p>Per Client/Week</p>
+                </div>
+                <div class="stat fade-in-up">
+                    <div class="stat-number">$10K+</div>
+                    <p>Scale Potential</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials - NOW 4 Testimonials -->
+    <section class="light-section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Early Results</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial fade-in-up">
+                    <p>"<em>Closed $2,800/mo client week 3 using exact outreach templates. This system works.</em>"</p>
+                    <div style="margin-top: 1.5rem; font-weight: 600;">— Sarah K., Agency Owner</div>
+                </div>
+                <div class="testimonial fade-in-up">
+                    <p>"<em>From $0 to $4,200 MRR in 45 days. The SOPs made delivery effortless.</em>"</p>
+                    <div style="margin-top: 1.5rem; font-weight: 600;">— Mike R., Freelancer</div>
+                </div>
+                <div class="testimonial fade-in-up">
+                    <p>"<em>Legal templates saved me from scope creep nightmare. Worth the price alone.</em>"</p>
+                    <div style="margin-top: 1.5rem; font-weight: 600;">— Priya S., Consultant</div>
+                </div>
+                <div class="testimonial fade-in-up">
+                    <p>"<em>First $1,200 client using LinkedIn templates in 18 days. Scaling to 3 clients now.</em>"</p>
+                    <div style="margin-top: 1.5rem; font-weight: 600;">— James L., Solopreneur</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 1rem;">Ready to Build Your AI Income System?</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 3rem; opacity: 0.9;">Join 100+ no-face operators scaling to $10K+/month</p>
+            <div class="price-badge" style="background: rgba(16,185,129,0.2); border: 2px solid #10b981; color: white;">
+                <strong>ONLY $599</strong><br>
+                <small>Instant Download + Lifetime Updates + Community</small>
+            </div>
+            <a href="https://mrbeastdigital.lemonsqueezy.com/checkout" class="cta-button" style="font-size: 1.5rem; padding: 20px 60px; display: inline-block;" target="_blank" rel="noopener noreferrer">Get Instant Access Now</a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Fade in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        });
+        
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s ease';
+            observer.observe(el);
+        });
+
+        // Track button clicks (optional analytics)
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                console.log('Buy button clicked - redirecting to LemonSqueezy');
+                // Opens in new tab guaranteed
+            });
+        });
+    </script>
+</body>
+</html>
